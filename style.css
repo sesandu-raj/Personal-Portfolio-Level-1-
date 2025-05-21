@@ -288,6 +288,8 @@ span {
   }
 }
 
+/* Education Section */
+
 .heading {
   font-size: 8rem;
   text-align: center;
@@ -392,4 +394,133 @@ span {
 ::-webkit-scrollbar-track {
   background: var(--bg-color);
   width: 10px;
+}
+
+/* Services Section */
+
+.services {
+  background: var(--bg-color);
+  color: var(--bg-color);
+}
+
+.services h2 {
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.service-box {
+  background-color: var(--main-color);
+  height: 250px;
+  border-radius: 1.5rem;
+  border: 5px solid transparent;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.service-box:hover {
+  background: white;
+  color: var(--bg-color);
+  border: 5px solid var(--main-color);
+  transform: scale(1.03);
+}
+
+.service-box .service-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-height: 150px;
+  justify-content: left;
+  align-items: baseline;
+  padding: 3rem 2rem;
+}
+
+.service-info h4 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.service-info p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  max-height: 100px;
+  line-height: 1.7;
+  margin: 9px;
+}
+
+/* Recommandation Section*/
+
+.recommandations {
+  background: var(--second-bg-color);
+}
+.recommandations-box {
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.recommandations .heading {
+  margin-bottom: 2rem;
+}
+
+.recommandations-box img {
+  width: 10rem;
+  border-radius: 50%;
+  border: 3px solid var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  margin-bottom: 10px;
+}
+
+.rec-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.rec-item {
+  min-height: 550px;
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.863);
+  border: 3px solid rgba(238, 238, 238, 0.2);
+  border-radius: 2rem;
+  margin: 0 1rem;
+  padding: 30px 50px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.rec-item:hover {
+  border: 3px solid var(--main-color);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 50px var(--main-color);
+}
+
+.rec-item h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.rec-item p {
+  font-size: 1.3rem;
+}
+
+#star {
+  color: gold;
+  font-size: 2rem;
 }
